@@ -2,6 +2,8 @@ import string
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
+import nltk
+nltk.download("stopwords", quiet=True)
 
 stop_words = set(stopwords.words("english"))
 ps = PorterStemmer()
